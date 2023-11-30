@@ -16,8 +16,8 @@ namespace RougeLike
         {
             textures = new Texture2D[Enum.GetNames<Texture>().Length];
 
-            textures[(int)Texture.player] = content.Load<Texture2D>("player");
-            textures[(int)Texture.enemy] = content.Load<Texture2D>("enemy");
+            textures[(int)Texture.player] = content.Load<Texture2D>("Player/PlayerTexture");
+            //textures[(int)Texture.enemy] = content.Load<Texture2D>("enemy");
         }
     }
 

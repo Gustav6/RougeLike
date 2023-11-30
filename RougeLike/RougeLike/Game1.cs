@@ -23,10 +23,9 @@ namespace RougeLike
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            base.Initialize();
 
             GameManager.Int();
-
-            base.Initialize();
         }
 
         protected override void LoadContent()
@@ -51,12 +50,16 @@ namespace RougeLike
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Blue);
+
+            _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
 
             foreach (GameObject gameObject in Library.gameObjects)
             {
                 gameObject.Draw(_spriteBatch);
             }
+
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }

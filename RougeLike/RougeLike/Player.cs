@@ -17,10 +17,15 @@ namespace RougeLike
             color = Color.White;
             moveSpeed = 300;
             texture = TextureManager.textures[(int)Texture.player];
+            scale = new Vector2(2, 2);
+
+            SetSourceRectangle(texture);
+            SetOrigin(texture);
         }
 
         public override void Update(GameTime gameTime)
         {
+            Controls();
             base.Update(gameTime);
         }
 
@@ -31,12 +36,12 @@ namespace RougeLike
 
             if (InputManager.IsPressed(Keys.Up))
             {
-                velocity.Y++;
+                velocity.Y--;
             }
 
             if (InputManager.IsPressed(Keys.Down))
             {
-                velocity.Y--;
+                velocity.Y++;
             }
 
             if (InputManager.IsPressed(Keys.Right))
@@ -50,9 +55,9 @@ namespace RougeLike
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatche)
+        public override void Draw(SpriteBatch spriteBatch)
         {
-            base.Draw(spriteBatche);
+            base.Draw(spriteBatch);
         }
     }
 }

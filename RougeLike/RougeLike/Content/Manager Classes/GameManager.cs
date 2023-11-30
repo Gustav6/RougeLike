@@ -11,7 +11,7 @@ namespace RougeLike
     {
         public static void Int()
         {
-
+            Library.gameObjects.Add(new Player(new Vector2(200, 200)));
         }
 
         public static void Update(GameTime gameTime)

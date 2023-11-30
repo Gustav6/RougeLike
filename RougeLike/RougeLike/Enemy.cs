@@ -23,9 +23,19 @@ namespace RougeLike
             base.Update(gameTime);
         }
 
-        public override void Draw(SpriteBatch spriteBatche)
+        public void IdleState()
         {
-            base.Draw(spriteBatche);
+
+        }
+
+        public void ChaseState()
+        {
+
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            base.Draw(spriteBatch);
         }
     }
 }

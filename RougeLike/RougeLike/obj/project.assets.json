@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\source\\repos\\RougeLike\\RougeLike\\RougeLike.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\Documents\\Github\\RougeLike\\RougeLike\\RougeLike\\RougeLike.csproj",
       "projectName": "RougeLike",
-      "projectPath": "C:\\Users\\gusta\\source\\repos\\RougeLike\\RougeLike\\RougeLike.csproj",
+      "projectPath": "C:\\Users\\gusta\\Documents\\Github\\RougeLike\\RougeLike\\RougeLike\\RougeLike.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\source\\repos\\RougeLike\\RougeLike\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\Documents\\Github\\RougeLike\\RougeLike\\RougeLike\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
